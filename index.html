@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinalTestC4E</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div>
+        <div style="padding: 5%;">
+            <div class="positionRelative">
+                <div class="display_Flex justify-center padding-bottom-5 gap3">
+                    <div class="squareResult"><img id="firstImg" class="img-result" src="./img/bau.png"></div>
+                    <div class="squareResult"><img id="secondImg" class="img-result" src="./img/bau.png"></div>
+                    <div class="squareResult"><img id="thirdImg" class="img-result" src="./img/bau.png"></div>
+                </div>
+                <button class="btn positionAbsolute btnLuckyDraw" onclick="onLuckyDraw()">Quay</button>
+            </div>
+            <div style="margin-top: 2rem;">
+                <div class="display_Flex justify-between">
+                    <div class="positionRelative square" onclick="onChooseImage('bau')">
+                        <img id="firstImg" class="img-select" src="./img/bau.png" alt="Bầu">
+                        <span class="positionAbsolute score" id="score_bau">0</span>
+                    </div>
+                    <div class="positionRelative square" onclick="onChooseImage('cua')">
+                        <img id="firstImg" class="img-select" src="./img/cua.png" alt="Cua">
+                        <span class="positionAbsolute score" id="score_cua">0</span>
+                    </div>
+                    <div class="positionRelative square" onclick="onChooseImage('tom')">
+                        <img id="firstImg" class="img-select" src="./img/tom.png" alt="Tôm">
+                        <span class="positionAbsolute score" id="score_tom">0</span>
+                    </div>
+                    <div class="positionRelative square" onclick="onChooseImage('ca')">
+                        <img id="firstImg" class="img-select" src="./img/ca.png" alt="Cá">
+                        <span class="positionAbsolute score" id="score_ca">0</span>
+                    </div>
+                    <div class="positionRelative square" onclick="onChooseImage('huou')">
+                        <img id="firstImg" class="img-select" src="./img/huou.png" alt="Hươu">
+                        <span class="positionAbsolute score" id="score_huou">0</span>
+                    </div>
+                    <div class="positionRelative square" onclick="onChooseImage('ga')">
+                        <img id="firstImg" class="img-select" src="./img/ga.png" alt="Gà">
+                        <span class="positionAbsolute score" id="score_ga">0</span>
+                    </div>
+                </div>
+                <div class="positionRelative">
+                    <p>Lưu ý:</p>
+                    <p>- Số lần đặt ở một 'Hình' sẽ là số lần xuất hiện của 'Hình' trên 'Kết quả'</p>
+                    <p>-Tổng số điểm đặt trong một lần, tối đa là 3</p>
+                    <button class="btn positionAbsolute btnReset" onclick="onResetData()">Đặt lại</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
